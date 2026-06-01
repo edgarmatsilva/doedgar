@@ -5,178 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>edgar</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-html {
-  background: #fff;
-  color: #000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 15px;
-  line-height: 1.75;
-}
-
-body {
-  max-width: 680px;
-  margin: 0 auto;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
-  min-height: 100vh;
-}
-
-a { color: #000; }
-a:hover { background: #000; color: #fff; }
-
-/* HEADER */
-header {
-  padding: 48px 36px 36px;
-  border-bottom: 4px solid #000;
-}
-
-header h1 {
-  font-size: 52px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -.02em;
-  margin-bottom: 16px;
-}
-
-header .local {
-  font-size: 11px;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  color: #555;
-}
-
-/* NAV */
-nav {
-  border-bottom: 1px solid #000;
-  display: flex;
-}
-nav a {
-  display: block;
-  padding: 10px 18px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-right: 1px solid #000;
-}
-nav a:last-child { border-right: none; }
-
-/* SECTIONS */
-section {
-  border-bottom: 1px solid #000;
-  padding: 44px 36px;
-}
-
-.sec-label {
-  font-size: 10px;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: #444;
-  margin-bottom: 28px;
-}
-
-/* QUEM SOU */
-.quem-sou p {
-  font-size: 16px;
-  line-height: 1.85;
-  max-width: 540px;
-}
-
-/* O QUE ADMIRO */
-.admiro ul {
-  list-style: none;
-  columns: 2;
-  column-gap: 32px;
-}
-.admiro ul li {
-  font-size: 14px;
-  padding: 7px 0;
-  border-bottom: 1px solid #eee;
-  break-inside: avoid;
-}
-.admiro ul li:last-child { border-bottom: none; }
-
-/* HISTÓRIA */
-.historia p {
-  font-size: 15px;
-  line-height: 1.85;
-  max-width: 540px;
-  margin-bottom: 16px;
-}
-.historia p:last-child { margin-bottom: 0; }
-
-/* O QUE ME MOVE */
-.move p {
-  font-size: 15px;
-  line-height: 1.85;
-  max-width: 540px;
-  margin-bottom: 20px;
-}
-.move p:last-child { margin-bottom: 0; }
-
-/* ESCREVO */
-.escrevo p {
-  font-size: 14px;
-  color: #444;
-  font-style: italic;
-  max-width: 480px;
-  line-height: 1.8;
-}
-
-/* CONTACTO */
-.contacto p {
-  font-size: 13px;
-  color: #333;
-  margin-bottom: 12px;
-  max-width: 440px;
-  line-height: 1.75;
-}
-.contacto p.email {
-  font-size: 16px;
-  font-weight: 700;
-  margin-top: 8px;
-  color: #000;
-  user-select: all;
-}
-
-/* FOOTER */
-footer {
-  padding: 20px 36px;
-  font-size: 10px;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: #444;
-  border-top: 4px solid #000;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.footer-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-footer a {
-  color: #444;
-  text-decoration: none;
-  font-size: 10px;
-  letter-spacing: .1em;
-}
-footer a:hover { background: none; color: #000; text-decoration: underline; }
-
-@media (max-width: 600px) {
-  header { padding: 36px 24px 28px; }
-  header h1 { font-size: 38px; }
-  section { padding: 36px 24px; }
-  nav a { padding: 10px 14px; }
-  .admiro ul { columns: 1; }
-  footer { padding: 16px 24px; }
-  .footer-row { flex-direction: column; gap: 4px; }
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:#fff;color:#000;font-family:'Courier New',Courier,monospace;font-size:15px;line-height:1.75}
+body{max-width:680px;margin:0 auto;border-left:1px solid #000;border-right:1px solid #000;min-height:100vh}
+a{color:#000}
+a:hover{background:#000;color:#fff}
+header{padding:48px 36px 36px;border-bottom:4px solid #000}
+header h1{font-size:52px;font-weight:700;line-height:1;letter-spacing:-.02em;margin-bottom:16px}
+header .local{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#555}
+nav{border-bottom:1px solid #000;display:flex}
+nav a{display:block;padding:10px 18px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-right:1px solid #000}
+nav a:last-child{border-right:none}
+section{border-bottom:1px solid #000;padding:44px 36px}
+.sec-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#444;margin-bottom:28px}
+.quem-sou p{font-size:16px;line-height:1.85;max-width:540px}
+.admiro ul{list-style:none;columns:2;column-gap:32px}
+.admiro ul li{font-size:14px;padding:7px 0;border-bottom:1px solid #eee;break-inside:avoid}
+.admiro ul li:last-child{border-bottom:none}
+.move p,.historia p{font-size:15px;line-height:1.85;max-width:540px;margin-bottom:16px}
+.move p{margin-bottom:20px}
+.move p:last-child,.historia p:last-child{margin-bottom:0}
+.escrevo p{font-size:14px;color:#444;font-style:italic;max-width:480px;line-height:1.8}
+.contacto p{font-size:13px;color:#333;margin-bottom:12px;max-width:440px}
+.contacto p.email{font-size:16px;font-weight:700;margin-top:8px;color:#000;user-select:all}
+footer{padding:20px 36px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#444;border-top:4px solid #000;display:flex;flex-direction:column;gap:10px}
+.footer-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+footer a{color:#444;text-decoration:none}
+footer a:hover{background:none;color:#000;text-decoration:underline}
+@media(max-width:600px){
+  header{padding:36px 24px 28px}
+  header h1{font-size:38px}
+  section{padding:36px 24px}
+  nav a{padding:10px 14px}
+  .admiro ul{columns:1}
+  footer{padding:16px 24px}
+  .footer-row{flex-direction:column;gap:4px}
 }
 </style>
 </head>
