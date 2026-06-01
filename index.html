@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>edgar</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  background: #fff;
+  color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+body {
+  max-width: 680px;
+  margin: 0 auto;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  min-height: 100vh;
+}
+
+a { color: #000; }
+a:hover { background: #000; color: #fff; }
+
+/* HEADER */
+header {
+  padding: 48px 36px 36px;
+  border-bottom: 4px solid #000;
+}
+
+header h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.02em;
+  margin-bottom: 16px;
+}
+
+header .local {
+  font-size: 11px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: #555;
+}
+
+/* NAV */
+nav {
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+nav a {
+  display: block;
+  padding: 10px 18px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-right: 1px solid #000;
+}
+nav a:last-child { border-right: none; }
+
+/* SECTIONS */
+section {
+  border-bottom: 1px solid #000;
+  padding: 44px 36px;
+}
+
+.sec-label {
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 28px;
+}
+
+/* QUEM SOU */
+.quem-sou p {
+  font-size: 16px;
+  line-height: 1.85;
+  max-width: 540px;
+}
+
+/* O QUE ADMIRO */
+.admiro ul {
+  list-style: none;
+  columns: 2;
+  column-gap: 32px;
+}
+.admiro ul li {
+  font-size: 14px;
+  padding: 7px 0;
+  border-bottom: 1px solid #eee;
+  break-inside: avoid;
+}
+.admiro ul li:last-child { border-bottom: none; }
+
+/* HISTÓRIA */
+.historia p {
+  font-size: 15px;
+  line-height: 1.85;
+  max-width: 540px;
+  margin-bottom: 16px;
+}
+.historia p:last-child { margin-bottom: 0; }
+
+/* O QUE ME MOVE */
+.move p {
+  font-size: 15px;
+  line-height: 1.85;
+  max-width: 540px;
+  margin-bottom: 20px;
+}
+.move p:last-child { margin-bottom: 0; }
+
+/* ESCREVO */
+.escrevo p {
+  font-size: 14px;
+  color: #444;
+  font-style: italic;
+  max-width: 480px;
+  line-height: 1.8;
+}
+
+/* CONTACTO */
+.contacto p {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 12px;
+  max-width: 440px;
+  line-height: 1.75;
+}
+.contacto p.email {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 8px;
+  color: #000;
+  user-select: all;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px 36px;
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #444;
+  border-top: 4px solid #000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+footer a {
+  color: #444;
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: .1em;
+}
+footer a:hover { background: none; color: #000; text-decoration: underline; }
+
+@media (max-width: 600px) {
+  header { padding: 36px 24px 28px; }
+  header h1 { font-size: 38px; }
+  section { padding: 36px 24px; }
+  nav a { padding: 10px 14px; }
+  .admiro ul { columns: 1; }
+  footer { padding: 16px 24px; }
+  .footer-row { flex-direction: column; gap: 4px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>edgar</h1>
+  <div class="local">Evoramonte — Alentejo — Portugal</div>
+</header>
+
+<nav>
+  <a href="#quem-sou">quem sou</a>
+  <a href="#admiro">o que admiro</a>
+  <a href="#move">o que me move</a>
+  <a href="#historia">o que ainda estou a aprender</a>
+  <a href="#contacto">contacto</a>
+</nav>
+
+<section id="quem-sou" class="quem-sou">
+  <div class="sec-label">// quem sou</div>
+  <p>Sou alguém que está a aprender a aceitar as minhas "imperfeições", o que tenho de bom e o que admiro. Sensível, com medos e muitas vezes (outras não...) com coragem de os olhar de frente.</p>
+  <p>Escolho ser Amoroso (e às vezes não consigo... ou até nem reparo que não estou a ser...).</p>
+  <p>Quero ser melhor, mais inteiro, mais presente, Ser Humano.</p>
+  <p>Casado com a mulher que Amo.</p>
+  <p>Finalmente feliz com a vida.</p>
+</section>
+
+<section id="admiro" class="admiro">
+  <div class="sec-label">// o que admiro</div>
+  <ul>
+    <li>O Amor</li>
+    <li>A Natureza</li>
+    <li>A Integridade</li>
+    <li>A Coragem</li>
+    <li>A Entrega</li>
+    <li>A Confiança</li>
+    <li>A capacidade de perdoar, a Compaixão</li>
+    <li>A música africana :)</li>
+    <li>A alegria que muitas pessoas têm, apesar de viverem vidas difíceis</li>
+    <li>O mar</li>
+    <li>O vento na cara</li>
+    <li>A montanha</li>
+    <li>A Presença</li>
+  </ul>
+</section>
+
+<section id="move" class="move">
+  <div class="sec-label">// o que me move</div>
+  <p>Caminhar ou andar de bicicleta na natureza faz-me sentir vivo, faz-me sentir o corpo, faz-me sentir o cansaço, o limite do físico e o que fica para além. Faz-me sentir Presente (e vezes sem conta distraído) e diluído com o que me rodeia, com o que vejo.</p>
+  <p>Gosto de sentir os meus pés, a sensação da planta do pé, sentir e lembrar-me que é com os pés que toco na terra. Os pés dão as pernas a força e vitalidade silenciosa mas poderosa que têm as montanhas.</p>
+  <p>Medito para me lembrar que Sou. Meditar faz-me aceitar quando me vejo como imperfeito. Faz-me entender que às vezes estou Presente (e que a maior parte das vezes não...), mas sobretudo me faz Ser enquanto tudo isto está a acontecer e que essa é a única verdade e realidade.</p>
+</section>
+
+<section id="historia" class="historia">
+  <div class="sec-label">// o que ainda estou a aprender</div>
+  <p>Durante muito tempo senti que falhei em muita coisa, mas na realidade talvez não tenha falhado nada. Tudo o que "falhou" me fez ser o que sou hoje.</p>
+  <p>A única coisa que falhei e muito no passado (que ainda hoje continuo a falhar ainda que em menor escala) é aceitar a vida tal como ela se manifesta, e com um sorriso.</p>
+</section>
+
+<section class="escrevo">
+  <div class="sec-label">// escrevo às vezes</div>
+  <p>Quando sair, sai.</p>
+</section>
+
+<section id="contacto" class="contacto">
+  <div class="sec-label">// contacto</div>
+  <p>Sem formulários. Sem bots. Só email.</p>
+  <p class="email">edgar [at] doedgar [ponto] eu</p>
+</section>
+
+<footer>
+  <div class="footer-row">
+    <span>edgar — evoramonte, alentejo, portugal</span>
+    <span>© 2026</span>
+  </div>
+  <div class="footer-row">
+    <a href="https://512kb.club" target="_blank">512KB Club — green team</a>
+    <a href="https://www.websitecarbon.com" target="_blank">website carbon</a>
+  </div>
+</footer>
+
+</body>
+</html>
